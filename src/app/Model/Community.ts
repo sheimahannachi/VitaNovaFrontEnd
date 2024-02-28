@@ -1,6 +1,6 @@
 
 
-class Community{
+export class Community{
     id!:Number;
 
     communityName!:string;

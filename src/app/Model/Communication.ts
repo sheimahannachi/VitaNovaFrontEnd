@@ -1,7 +1,7 @@
 
 
 
-class Communication{
+export class Communication{
 
     id!:Number;
 
@@ -10,6 +10,8 @@ class Communication{
     sentDate!:Date;
 
     seen!:boolean;
+
+    sender!:any;
     
 
 }

@@ -7,6 +7,8 @@ import { HttpClientModule} from "@angular/common/http";
 import { CommunicationComponent } from './communication/communication.component';
 import { CommunityComponent } from './community/community.component';
 import { ChallenegeComponent } from './challenege/challenege.component'
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ChallenegeComponent } from './challenege/challenege.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

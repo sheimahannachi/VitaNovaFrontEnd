@@ -1,7 +1,7 @@
 
 
 <div class="community">
-
+    <router-outlet></router-outlet>
     <div>
         <h3 class="CName">{{ClasseName}}</h3>
         <h4 class="CName">{{creatorName}} </h4>
@@ -18,12 +18,13 @@
             </ul>
         -->
     </div>
+    
     <div class="button-container">
         <button type="button">Add Challenge</button>
-    
-        <button type="button">Chat</button>
+        
+        <button type="button" routerLink="/chat">Chat</button>
     
         <button class="circle-button">Join</button>
     </div>
 </div>
-    
+
