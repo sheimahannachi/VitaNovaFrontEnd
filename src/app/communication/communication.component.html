@@ -40,7 +40,7 @@
                                    <!--IMG if added-->
                                 </a>
                                 <div class="chat-about"> <!--{{CommunityName}}-->
-                                    <h6 class="m-b-0">{{CommunityName}}<!--Aiden Chavez--></h6>
+                                    <h6 class="m-b-0">{{CommunityName}}</h6>
                                    
                                 </div>
                             </div>
@@ -53,27 +53,37 @@
                             <li class="clearfix" *ngIf="i.sender==current">           <!--*ngIf"=i.sender==current"-->
                                 <div class="message-data text-right">
                                                                     <!-- {{i.sentDate}}-->
-                                    <span class="message-data-time ">{{i.sentDate}}<!--10:10 AM, Today--></span>
+                                    <span class="message-data-time ">{{i.sentDate}}</span>
                                     <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="avatar">
                                 </div>                                      <!-- {{i.message}}-->
-                                <div class="message other-message float-right "> {{i.message}}<!--Hi Aiden, how are you? How is the project coming along?--> </div>
+                                <div class="message other-message float-right "> {{i.message}} </div>
                            
                             </li>       <!--*ngIf="i.sender !=current"-->
                             <li class="clearfix" *ngIf="i.sender !=current">
                                 <div class="message-data">          <!-- {{i.sentDate}}-->
-                                    <span class="message-data-time">{{i.sentDate}}<!--10:12 AM, Today--></span>
+                                    <span class="message-data-time">{{i.sentDate}}</span>
                                 </div>                          <!-- {{i.message}}-->
-                                <div class="message my-message">{{i.message}}<!--Are we meeting today?--></div>                                    
+                                <div class="message my-message">{{i.message}}</div>                                    
                             </li>                               
                            
                         </ul>
                     </div>
+
+                    
+
+
+
+
+
+
+
+
                     <div class="chat-message clearfix">
                         <div class="input-group mb-0">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><button (click)="sendMessage()"><!--<i class="fa fa-send"></i>--></button></span>
                             </div>
-                            <input type="text" class="form-control" placeholder="Enter text here..." [(ngModel)]="message">    {{message}}                                
+                            <input type="text" class="form-control" placeholder="Write your message..." [(ngModel)]="message">    {{message}}                                
                         </div>
                     </div>
                 </div>

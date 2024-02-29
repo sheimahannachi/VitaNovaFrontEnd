@@ -85,17 +85,8 @@ export class CommunicationServiceService {
   //////////////////////////////////////////////////////////////////////////////////////////////////
   // Subscribe to the community Topic
   this.stompClient.subscribe(this.topic+this.communityId, this.onMessageReceived);
-  console.log("7");
+  
 
-  /* Tell your username to the server
-  stompClient.send("/app/chat.addUser/"+CommunityId,
-      {},
-      JSON.stringify({
-          sender: user,
-          type: 'JOIN'})
-  )
-  console.log("8");
-*/
   
 }
 
@@ -117,8 +108,9 @@ errorCallBack(error:Communication) {
 //Communication
 _send(message:Communication) {
   console.log("calling logout api via web socket");
+
   this.stompClient.send(this.sendMessage+this.communityId, {}, JSON.stringify(message));
-  
+
 }
 
 comm!:Communication;
