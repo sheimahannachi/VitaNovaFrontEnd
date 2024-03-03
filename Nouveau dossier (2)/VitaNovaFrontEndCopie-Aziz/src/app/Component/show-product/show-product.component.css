@@ -1,0 +1,10 @@
+.action-cell {
+    display: flex;
+
+    align-items: center;
+  }
+  
+  .action-cell button {
+    margin-right: 5px; /* Espacement entre les boutons */
+  }
+  
